@@ -10,5 +10,5 @@ end
 
 def assign_rooms(array)
   array.each_with_index {|value, index| puts "Hello, #{value}! You'll be assigned to room #{index + 1}!"}
-  end
+
 end
