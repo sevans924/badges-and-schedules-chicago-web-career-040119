@@ -4,7 +4,6 @@ end
 # Write your code here.
 
 def batch_badge_creator(array)
-  array.each do |name|
-    return "Hello, my name is #{name}."
-  end
+  array.map {|name| return "Hello, my name is #{name}."}
+
 end
