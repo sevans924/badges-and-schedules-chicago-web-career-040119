@@ -3,17 +3,17 @@ def badge_maker (name)
 end
 # Write your code here.
 
-def batch_badge_creator(array)
-  array.map { |name| "Hello, my name is #{name}."}
+def batch_badge_creator(guests)
+  guests.map { |name| "Hello, my name is #{name}."}
 
 end
 
-def assign_rooms(array)
-  array.each.with_index.map { |value, index| "Hello, #{value}! You'll be assigned to room #{index + 1}!"}
+def assign_rooms(guests)
+  guests.each.with_index.map { |value, index| "Hello, #{value}! You'll be assigned to room #{index + 1}!"}
 
 end
 
-def printer
+def printer()
   batch_badge_creator.each { |i| puts i}
   assign_rooms.each { |x| puts x}
 end
